@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>:)</title>
+  <style>
+    #cat-img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    #move-away-button {
+      position: absolute;
+    }
+
+    #say-meow-button {
+      margin-left: 10px;
+    }
+
+    #move-away-button,
+    #say-meow-button {
+      display: block;
+      width: 150px;
+      height: 50px;
+      font-size: 20px;
+      margin: 0 auto;
+    }
+
+    .button-container {
+      display: grid;
+      place-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="https://i.pinimg.com/originals/a8/c2/d0/a8c2d0cf197a662ec6bc9b21b3317ca4.jpg" width=50% height=390px
+      alt="Cute Cat" id="cat-img">
+    <p>Can you pliissss hangout with me?</p>
+    <div class="button-container">
+      <button id="move-away-button" onmouseover="moveButton()">Move Away</button>
+      <button id="say-meow-button" onclick="alert('Thankyyyyyyooouuuuuuu!')">Sure :)</button>
+    </div>
+  </div>
+  <script>
+    var button = document.getElementById("move-away-button");
+    var x = 0;
+    var y = 0;
+    var z = 0;
+    var k = 0;
+    function moveButton() {
+      x += 70;
+      y += 90;
+      k += 50;
+      z += 80;
+
+      button.style.left = x + "px";
+      button.style.top = y + "px";
+      button.style.right = z + "px";
+      button.style.down = k + "px";
+    }
+  </script>
+</body>
+
+</html>
